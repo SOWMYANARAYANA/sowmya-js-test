@@ -3,16 +3,23 @@
 <head>
 	<title>form</title>
 </head>
+
 <body>
-<form name="myForm" 
-onsubmit="return validateForm()" method="post">
-FirstName: <input type="text" name="fname">
-LastName:<input type="text" name="lname">
-Email:<input type="text" name="email">
-Address:<input type="text" name="Address">
-<input type="submit" value="Submit">
-<button onclick="myFunction()">submit</button>
-</form>
+<div id="show">
+<h1>FirstName:<span id="FirstName"></span></h1>
+<h2>LastName:<span id="LastName"></span></h2>
+<h3>Email:<span id="Email"></span></h3>
+<h4>Address:<span id="Address"></span></h4>
+</div>
+<div id = "form">
+<form name="myForm">
+	FirstName: <input type="text" name="fname" id="A">
+	LastName:<input type="text" name="lname">
+	Email:<input type="text" name="email">
+	Address:<input type="text" name="address">
+	</form>
+	<button onclick="myFunction()">submit</button>
+	</div>
 </body>
 <script type="text/javascript" src="form.js"></script>
 </html>
